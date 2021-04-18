@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { Theme } from "./types";
+import { Theme } from "../../types";
 
 export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
@@ -23,26 +23,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     height: "40px",
     fontWeight: "900",
   },
-  links: {
-    margin: "0",
-    listStyleType: "none",
-    padding: "0",
-    display: "flex",
-    justifyContent: "space-between",
-    width: "50%",
-    alignItems: "center",
-    fontSize: "2.5rem",
-    textTransform: "uppercase",
-    color: "#fff",
-    fontFamily: "'Montserrat', sans-serif",
-  },
-  link: {
-    cursor: "pointer",
-    "&:hover": {
-      background: "transparent",
-      borderWidth: "1px",
-      borderBottomStyle: "solid",
-    },
+  navOpen: {
+    display: "none",
   },
 
   "@media (max-width: 504px)": {
